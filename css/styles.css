@@ -13,6 +13,7 @@
   --logo-fontsize: "Raleway", sans-serif;
   --button-color-focus: #188ce8;
 }
+
 body {
   color: var(--color-text);
   background-color: var(--primery-background);
@@ -45,6 +46,7 @@ body {
 img {
   display: block;
 }
+
 h1,
 h2,
 h3,

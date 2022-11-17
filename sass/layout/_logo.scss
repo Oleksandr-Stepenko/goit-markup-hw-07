@@ -1,0 +1,21 @@
+.logo {
+	font-family: $logo-fontsize;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: $color-text;
+	text-decoration: none;
+}
+
+.logo-web {
+	color: $color-text-logo;
+}
+
+.studio-header {
+	color: #000000;
+}
+
+.studio-footer {
+	color: $primery-background;
+}

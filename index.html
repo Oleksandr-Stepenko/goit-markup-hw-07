@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+	<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +14,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
 
-  <body>
+	<body>
+
+<!----- Header ----->
     <header class="line">
-      <!-- Information -->
       <div class="container main-nav">
         <a class="logo" href="./index.html"
           ><span class="logo-web">Web</span
-          ><span class="studio-header">Studio</span></a
-        >
+          ><span class="studio-header">Studio</span></a>
+
+<!-- Navigation -->
         <nav class="header-nav">
           <ul class="nav-list list">
             <li>
@@ -44,6 +46,7 @@
           </ul>
         </nav>
         <ul class="nav-contacts list">
+<!--! TODO: li class="item"-->
           <li class="item">
             <a class="link-contacts link" href="mailto:info@devstudio.com">
               <svg class="contacts-icon" width="16" height="12">
@@ -64,14 +67,16 @@
       </div>
     </header>
     <main>
-      <!--Hero-->
+
+<!--Hero-->
       <section class="hero overlay">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-btn btn" type="button" data-modal-open>
           Замовити послугу
         </button>
       </section>
-      <!--Особливості-->
+
+<!------ Features ----->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -126,7 +131,8 @@
           </ul>
         </div>
       </section>
-      <!--Чим ми займаємося-->
+
+<!----- Work ----->
       <section class="section no-padding">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
@@ -173,7 +179,8 @@
           </ul>
         </div>
       </section>
-      <!--Наша команда-->
+
+<!----- Team ----->
       <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
@@ -445,7 +452,8 @@
           </ul>
         </div>
       </section>
-      <!-- Наші клієнти -->
+
+<!----- Clients ----->
       <section class="section client">
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
@@ -496,7 +504,8 @@
         </div>
       </section>
     </main>
-    <!--Підвал-->
+
+<!----- Footer ------>
     <footer class="footer">
       <div class="container footer-sections">
         <div>
@@ -585,6 +594,8 @@
             </li>
           </ul>
         </div>
+
+<!----- Footer form ----->
         <div>
           <p class="subscribe">Підпишіться на розсилку</p>
           <form>
@@ -604,7 +615,8 @@
         </div>
       </div>
     </footer>
-    <!-- Модальне вікно -->
+
+<!----- Modal window ----->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
@@ -673,20 +685,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
-    </script>
+    <script src="./js/speaker-form.js"></script>
   </body>
 </html>
