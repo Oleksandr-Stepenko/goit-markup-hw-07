@@ -8,14 +8,18 @@
 	text-decoration: none;
 }
 
-.logo-web {
+.header__logo {
+	margin-right: 93px;
+}
+
+.logo__main-part {
 	color: $color-text-logo;
 }
 
-.studio-header {
+.logo__second-part--dark {
 	color: #000000;
 }
 
-.studio-footer {
+.logo__second-part--light {
 	color: $primery-background;
 }
